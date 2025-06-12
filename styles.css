@@ -1,42 +1,82 @@
 body {
   font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #fdfdfd;
   color: #333;
 }
 
 header {
-  background-color: #4caf50;
+  background-color: #356859;
   color: white;
-  padding: 2rem;
+  padding: 20px;
   text-align: center;
 }
 
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 main {
-  padding: 2rem;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 40px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+textarea {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
 }
 
 button {
-  padding: 0.5rem 1rem;
-  background-color: #4caf50;
+  background-color: #356859;
   color: white;
   border: none;
-  border-radius: 5px;
+  padding: 10px 20px;
   cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #2a4d44;
 }
 
-#mapa {
-  margin-top: 1rem;
-  height: 300px;
-  width: 100%;
-  background-color: #ddd;
+footer {
+  background-color: #ccc;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
 }

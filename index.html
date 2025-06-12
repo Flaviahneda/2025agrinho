@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portal de Saberes Rurais</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
     <h1>Portal de Saberes Rurais</h1>
-    <p>Conectando o Campo e a Cidade através do Conhecimento</p>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#informacoes">Informações</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Saberes do Campo</h2>
-      <p>Conhecimentos passados de geração em geração, valorizando a cultura rural.</p>
+    <section id="sobre">
+      <h2>Sobre o Portal</h2>
+      <p>Este portal foi criado para valorizar e compartilhar os saberes e práticas das comunidades rurais. Aqui, você encontrará histórias, técnicas, tradições e conhecimentos que conectam o campo à cidade.</p>
+      <img src="imagens/saberes1.jpg" alt="Saberes Rurais" />
     </section>
 
-    <section>
-      <h2>Mapa Interativo</h2>
-      <button onclick="obterLocalizacao()">Mostrar minha localização</button>
-      <div id="mapa"></div>
+    <section id="galeria">
+      <h2>Galeria de Fotos</h2>
+      <div class="galeria">
+        <img src="imagens/foto1.jpg" alt="Foto 1" />
+        <img src="imagens/foto2.jpg" alt="Foto 2" />
+        <img src="imagens/foto3.jpg" alt="Foto 3" />
+        <img src="imagens/foto4.jpg" alt="Foto 4" />
+      </div>
+    </section>
+
+    <section id="informacoes">
+      <h2>Textos e Informações</h2>
+      <p>Aqui você pode escrever textos longos, inserir entrevistas, receitas tradicionais, métodos de cultivo sustentável e muito mais. A ideia é que esse espaço sirva como uma verdadeira biblioteca digital do campo.</p>
+      <textarea placeholder="Digite ou cole seu texto aqui..." rows="10" cols="80"></textarea>
+    </section>
+
+    <section id="localizacao">
+      <h2>Minha Localização</h2>
+      <button onclick="obterLocalizacao()">Clique para detectar sua localização</button>
+      <p id="resultado-localizacao"></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 - Projeto Agrino</p>
+    <p>&copy; 2025 Portal de Saberes Rurais | Desenvolvido por [Seu Nome]</p>
   </footer>
 
-  <script src="gps.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
